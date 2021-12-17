@@ -1,6 +1,8 @@
 # ClickHouse Keeper Example
 
-An example of running a local `ClickHouse` cluster using `clickhouse-keeper` for replication
+An example of running a local `ClickHouse` cluster using `clickhouse-keeper` for replication.
+
+Config examples accompanying the [blog post](https://mrkaran.dev/posts/clickhouse-replication/).
 
 ## Generate Config
 
