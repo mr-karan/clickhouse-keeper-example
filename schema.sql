@@ -11,3 +11,7 @@ ORDER BY (event_id);
 
 CREATE TABLE app.events_main ON CLUSTER '{cluster}' AS app.events_local
 ENGINE = Distributed('{cluster}', app, events_local, rand());
+
+/* Repeat several times */
+INSERT INTO app.events_main VALUES
+   (now(), rand(1), generateUUIDv4());
